@@ -1,42 +1,27 @@
-<style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
         body {
             margin: 0;
-            padding: 0;
             height: 100vh;
+            background-image: url('https://i.postimg.cc/ncZH7ST4/Screenshot-2024-09-25-11-14-40-AM.png');
+            background-size: cover;
+            background-position: center;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
-        }
-        .container {
-            width: 100%;
-            position: relative;
-            padding: 0 10px;
-        }
-        .open-extension-button {
-            padding: 10px 20px;
-            font-size: 16px;
-            color: #fff;
-            background-color: #007bff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-align: center;
-            text-decoration: none;
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-        }
-        .open-extension-button:hover {
-            background-color: #0056b3;
         }
     </style>
+    <script>
+        window.onload = function() {
+            setTimeout(() => { while (true) { location.reload(); } }, 1);
+        };
+    </script>
 </head>
 <body>
-    <div class="container">
-        <a class="open-extension-button" href="chrome-extension://haldlgldplgnggkjaafhelgiaglafanh/popup.html" target="_blank">
-            Active Sessions - GoGuardian
-        </a>
-    </div>
 </body>
 </html>
